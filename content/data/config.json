@@ -21,9 +21,15 @@
             },
             {
                 "type": "Link",
-                "label": "Faq",
+                "label": "FAQ",
                 "url": "/faq",
                 "altText": ""
+            },
+            {
+                "type": "Link",
+                "label": "Blog",
+                "altText": "Blog",
+                "url": "/blog"
             }
         ],
         "secondaryLinks": [
@@ -45,10 +51,34 @@
                     "pl-4"
                 ]
             }
+        },
+        "logo": {
+            "altText": "altText of the image",
+            "caption": "Caption of the image",
+            "elementId": "",
+            "styles": {
+                "self": {
+                    "opacity": 100
+                }
+            },
+            "type": "ImageBlock",
+            "url": "/images/logo.svg"
         }
     },
     "footer": {
-        "colors": "colors-c",
+        "colors": "colors-h",
+        "logo": {
+            "altText": "altText of the image",
+            "caption": "Caption of the image",
+            "elementId": "",
+            "styles": {
+                "self": {
+                    "opacity": 100
+                }
+            },
+            "type": "ImageBlock",
+            "url": "/images/logo.svg"
+        },
         "title": "Startup.io",
         "contacts": {
             "phoneNumber": "850-123-5021",
@@ -89,22 +119,22 @@
             {
                 "type": "Social",
                 "altText": "Twitter",
+                "label": "Twitter",
                 "url": "/",
-                "showIcon": true,
                 "icon": "twitter"
             },
             {
                 "type": "Social",
                 "altText": "Instagram",
+                "label": "Instagram",
                 "url": "/",
-                "showIcon": true,
                 "icon": "instagram"
             },
             {
                 "type": "Social",
                 "altText": "Facebook",
+                "label": "Facebook",
                 "url": "/",
-                "showIcon": true,
                 "icon": "facebook"
             }
         ],

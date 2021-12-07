@@ -5,20 +5,23 @@ sections:
   - type: HeroSection
     elementId: homepage-hero-1
     colors: colors-a
-    title: 'Love where you work, because work loves you'
-    text: >
-      One platform, one community, getting to the bottom line of everything
-      employment.  Figure out your benefits, practice for interviews, get
-      mentored, help peers, get helped in return.
+    title: 'Love your work. Work loves you.'
+    subtitle: 'One platform, one comunity.'
     actions:
       - type: Button
-        label: Sign Up
+        label: Get Started
         url: 'https://www.stackbit.com/'
         style: primary
         elementId: hero-main-button
-    feature:
+      - type: Link
+        label: Learn More
+        url: /
+        showIcon: true
+        icon: arrowRight
+        iconPosition: right
+    media:
       type: ImageBlock
-      url: /images/hero-1.png
+      url: /images/hero.png
       altText: Image alt text
       caption: Image caption
     styles:
@@ -32,16 +35,12 @@ sections:
           - mr-0
         padding:
           - pt-12
-          - pb-12
+          - pb-80
           - pr-4
           - pl-4
         alignItems: center
         justifyContent: center
         flexDirection: row
-        borderRadius: none
-        borderWidth: 0
-        borderStyle: none
-        borderColor: border-dark
       title:
         textAlign: left
       subtitle:
@@ -51,43 +50,48 @@ sections:
       actions:
         justifyContent: flex-start
   - elementId: ''
+    customClass: 'overlap'
     colors: colors-f
+    backgroundSize: inset
     title: Where did everyone go?
     text: >
       Learn how top tech companies have learned working remote using our
       product.
+    badge:
+      type: Badge
+      label: Case study
+      styles:
+        self:
+          textAlign: left
     actions:
       - type: Button
-        label: Sign Up
+        label: Get Started
         url: /
-        style: secondary
-      - type: Button
+        style: primary
+      - type: Link
         label: Watch Video
         url: /
-        style: link
         showIcon: true
-        icon: arrowRight
-    feature:
-      type: ImageBlock
-      url: /images/hero-3.jpg
-      altText: Hero section image
+        icon: playCircle
+        iconPosition: left
     styles:
       self:
         height: auto
         width: wide
         margin:
-          - mt-20
           - mb-20
-          - ml-20
-          - mr-20
+          - ml-4
+          - mr-4
         padding:
-          - pt-28
-          - pb-28
-          - pl-4
-          - pr-4
+          - pt-16
+          - pb-16
+          - pl-12
+          - pr-12
         alignItems: center
         justifyContent: center
         flexDirection: row
+        borderRadius: xx-large
+        boxShadow: xx-large
       title:
         textAlign: left
       subtitle:
@@ -96,38 +100,48 @@ sections:
         textAlign: left
       actions:
         justifyContent: flex-start
-    type: HeroSection
+    type: FeatureHighlightSection
+    media:
+      url: /images/hero-3.jpg
+      altText: Where did everyone go?
+      caption: Team meeting
+      elementId: ''
+      styles:
+        self:
+          opacity: 100
+      type: ImageBlock
   - colors: colors-h
+    subtitle: Trusted by
     elementId: ''
     images:
       - type: ImageBlock
         url: /images/apple.svg
-        altText: image alt text
-        caption: image caption
+        altText: Apple
+        caption: Apple
       - type: ImageBlock
         url: /images/google-play.svg
-        altText: image alt text
-        caption: image caption
+        altText: Google Play
+        caption: Google Play
       - type: ImageBlock
         url: /images/playstation.svg
-        altText: image alt text
-        caption: image caption
+        altText: PlayStation
+        caption: PlayStation
       - type: ImageBlock
         url: /images/gatsby.svg
-        altText: image alt text
-        caption: image caption
+        altText: Gatsby
+        caption: Gatsby
       - type: ImageBlock
         url: /images/xbox.svg
-        altText: altText of the image
-        caption: Caption of the image
+        altText: Xbox
+        caption: Xbox
       - type: ImageBlock
         url: /images/skype.svg
-        altText: altText of the image
-        caption: Caption of the image
+        altText: Skype
+        caption: Skype
       - type: ImageBlock
         url: /images/zcool.svg
-        altText: altText of the image
-        caption: Caption of the image
+        altText: ZCOOL
+        caption: ZCOOL
     spacing: 3
     columns: 7
     aspectRatio: 'auto'
@@ -141,7 +155,7 @@ sections:
           - mt-0
           - mb-0
         padding:
-          - pt-36
+          - pt-12
           - pb-24
           - pl-4
           - pr-4
@@ -156,14 +170,14 @@ sections:
         textAlign: center
     imageSizePx: 240
     type: MediaGallerySection
-  - colors: colors-h
+  - colors: colors-a
     elementId: ''
     title: Remote doesn’t mean alone. Here are so great features
     subtitle: >-
       These are all excellent features that will provide exactly the things
       you’re looking for.
     items:
-      - type: ItemBlock
+      - type: FeaturedItem
         title: Faster
         text: >
           Learn how top tech companies have learned working remote using our
@@ -178,11 +192,17 @@ sections:
               opacity: 100
           type: ImageBlock
         styles:
-          title:
-            textAlign: center
-          text:
-            textAlign: center
-      - type: ItemBlock
+          self:
+            textAlign: left
+            borderColor: border-dark
+            borderWidth: 1
+            borderStyle: solid
+            padding:
+              - pt-4
+              - pl-4
+              - pb-6
+              - pr-4
+      - type: FeaturedItem
         title: Smarter
         text: >
           Learn how top tech companies have learned working remote using our
@@ -197,11 +217,17 @@ sections:
               opacity: 100
           type: ImageBlock
         styles:
-          title:
-            textAlign: center
-          text:
-            textAlign: center
-      - type: ItemBlock
+          self:
+            textAlign: left
+            borderColor: border-dark
+            borderWidth: 1
+            borderStyle: solid
+            padding:
+              - pt-4
+              - pl-4
+              - pb-6
+              - pr-4
+      - type: FeaturedItem
         title: Focused
         text: >
           Learn how top tech companies have learned working remote using our
@@ -216,11 +242,18 @@ sections:
               opacity: 100
           type: ImageBlock
         styles:
-          title:
-            textAlign: center
-          text:
-            textAlign: center
+          self:
+            textAlign: left
+            borderColor: border-dark
+            borderWidth: 1
+            borderStyle: solid
+            padding:
+              - pt-4
+              - pl-4
+              - pb-6
+              - pr-4
     columns: 3
+    enableHover: false
     styles:
       self:
         height: auto
@@ -253,9 +286,21 @@ sections:
     text: >
       Share WIP, comment on each other’s work, approve what’s ready to go, ship
       together
-    feature:
+    actions:
+      - type: Button
+        label: Get Started
+        url: 'https://www.stackbit.com/'
+        style: primary
+        elementId: hero-main-button
+      - type: Link
+        label: Learn More
+        url: /
+        showIcon: true
+        icon: arrowRight
+        iconPosition: right
+    media:
       type: ImageBlock
-      url: /images/Image-on-the-right.svg
+      url: /images/hero-1.png
       altText: Hero section image
     styles:
       self:
@@ -283,16 +328,28 @@ sections:
         textAlign: left
       actions:
         justifyContent: flex-start
-    type: HeroSection
+    type: FeatureHighlightSection
   - elementId: ''
     colors: colors-a
     title: And a strong value proposition
     text: >
       Share WIP, comment on each other’s work, approve what’s ready to go, ship
       together
-    feature:
+    actions:
+      - type: Button
+        label: Get Started
+        url: 'https://www.stackbit.com/'
+        style: primary
+        elementId: hero-main-button
+      - type: Link
+        label: Learn More
+        url: /
+        showIcon: true
+        icon: arrowRight
+        iconPosition: right
+    media:
       type: ImageBlock
-      url: /images/Image-on-the-left.svg
+      url: /images/hero-2.png
       altText: Hero section image
     styles:
       self:
@@ -317,44 +374,18 @@ sections:
         textAlign: left
       actions:
         justifyContent: flex-start
-    type: HeroSection
+    type: FeatureHighlightSection
   - elementId: ''
     colors: colors-a
-    text: >+
-      ## “We sometimes write things. You should read it, it might shed some
-      light on why we’re doing what we’re doing”
-
-      [See all posts](/blog)
-
-    styles:
-      self:
-        height: auto
-        width: wide
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
-        padding:
-          - pt-22
-          - pb-0
-          - pl-4
-          - pr-4
-        justifyContent: center
-        borderRadius: none
-        borderWidth: 0
-        borderStyle: none
-        borderColor: border-dark
-      title:
-        textAlign: left
-      subtitle:
-        textAlign: center
-      text:
-        textAlign: left
-    type: TextSection
-  - elementId: ''
     variant: variant-b
-    colors: colors-a
+    title: We sometimes write things. You should read it, it might shed some
+      light on why we’re doing what we’re doing
+    actions:
+      - type: Link
+        label: See all posts
+        url: '/blog'
+        showIcon: true
+        icon: arrowRight
     posts:
       - content/pages/blog/post-four.md
       - content/pages/blog/post-three.md
@@ -368,7 +399,7 @@ sections:
           - ml-0
           - mr-0
         padding:
-          - pt-12
+          - pt-22
           - pb-36
           - pl-4
           - pr-4
@@ -378,53 +409,47 @@ sections:
         borderStyle: none
         borderColor: border-dark
       title:
-        textAlign: center
+        textAlign: left
       subtitle:
-        textAlign: center
+        textAlign: left
       actions:
-        justifyContent: center
+        justifyContent: flex-start
     type: FeaturedPostsSection
+    showDate: true
   - colors: colors-f
     elementId: ''
     title: Need Answers?
     items:
-      - type: ItemBlock
-        title: How it this different from what we have today?
-        text: >
-          At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation
-        styles:
-          title:
-            textAlign: left
-          text:
-            textAlign: left
-      - type: ItemBlock
-        title: How it this different from what we have today?
-        text: >
-          At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation
-        styles:
-          title:
-            textAlign: left
-          text:
-            textAlign: left
-      - type: ItemBlock
-        title: How it this different from what we have today?
-        text: >
-          At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation
-        styles:
-          title:
-            textAlign: left
-          text:
-            textAlign: left
-      - type: ItemBlock
-        title: How it this different from what we have today?
-        text: >
-          At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation
-        styles:
-          title:
-            textAlign: left
-          text:
-            textAlign: left
-    columns: 2
+      - question: How it this different from what we have today?
+        answer: >-
+          At the office, working together is often a distruction, on remote, it
+          could be motivation, At the office, working together is often a
+          distruction, on remote, it could be motivation, At the office, working
+          together is often a distruction, on remote, it could be motivation
+      - question: How it this different from what we have today?
+        answer: >-
+          At the office, working together is often a distruction, on remote, it
+          could be motivation, At the office, working together is often a
+          distruction, on remote, it could be motivation, At the office, working
+          together is often a distruction, on remote, it could be motivation
+      - question: How it this different from what we have today?
+        answer: >-
+          At the office, working together is often a distruction, on remote, it
+          could be motivation, At the office, working together is often a
+          distruction, on remote, it could be motivation, At the office, working
+          together is often a distruction, on remote, it could be motivation
+      - question: How it this different from what we have today?
+        answer: >-
+          At the office, working together is often a distruction, on remote, it
+          could be motivation. At the office, working together is often a
+          distruction, on remote, it could be motivation. At the office, working
+          together is often a distruction, on remote, it could be motivation.
+      - question: How it this different from what we have today?
+        answer: >-
+          At the office, working together is often a distruction, on remote, it
+          could be motivation. At the office, working together is often a
+          distruction, on remote, it could be motivation. At the office, working
+          together is often a distruction, on remote, it could be motivation.
     styles:
       self:
         height: auto
@@ -435,8 +460,8 @@ sections:
           - ml-0
           - mr-0
         padding:
-          - pt-28
-          - pb-28
+          - pt-20
+          - pb-36
           - pl-4
           - pr-4
         justifyContent: center
@@ -445,17 +470,27 @@ sections:
         borderStyle: none
         borderColor: border-dark
       title:
-        textAlign: center
+        textAlign: left
       subtitle:
+        fontWeight: '400'
+        fontStyle: normal
         textAlign: center
-      actions:
-        justifyContent: flex-start
-    type: FeaturedItemsSection
+    type: FaqSection
+    actions:
+      - altText: ''
+        url: /
+        showIcon: true
+        icon: arrowRight
+        iconPosition: right
+        elementId: ''
+        type: Link
+        label: See all
   - elementId: ''
     colors: colors-a
+    variant: variant-a
     testimonials:
       - quote: >
-          ## Such a great experience to be using this product. It really helped
+          Such a great experience to be using this product. It really helped
           with what I needed help with.
         name: Carla Rogers
         title: Happy customer
@@ -463,28 +498,16 @@ sections:
           type: ImageBlock
           url: /images/carla.jpg
           altText: Photo of Isabelle Parks
-        styles:
-          self:
-            margin:
-              - mt-0
-              - mb-0
-            flexDirection: row-reverse
-          quote:
-            textAlign: left
-          name:
-            textAlign: left
-          title:
-            textAlign: left
     styles:
       self:
         height: auto
         width: wide
         margin:
           - mt-0
-          - mb-0
+          - mb-24
         padding:
           - pt-28
-          - pb-28
+          - pb-64
           - pl-4
           - pr-4
         justifyContent: center
@@ -494,7 +517,9 @@ sections:
         textAlign: left
     type: TestimonialsSection
   - type: ContactSection
+    customClass: 'overlap'
     colors: colors-f
+    backgroundSize: inset
     title: Get early access
     text: >
       Sign up your team today to be the first to try out our new product to
@@ -511,29 +536,31 @@ sections:
           width: full
           type: EmailFormControl
       submitLabel: Sign Up
+      styles:
+        submitLabel:
+          textAlign: center
     styles:
       self:
         height: auto
-        width: narrow
+        width: wide
         margin:
-          - mt-0
           - mb-0
           - ml-0
           - mr-0
         padding:
-          - pt-36
-          - pb-36
-          - pr-4
-          - pl-4
+          - pt-24
+          - pb-24
+          - pr-12
+          - pl-12
         alignItems: center
         justifyContent: center
         flexDirection: row
-        borderRadius: none
+        borderRadius: xx-large
         borderWidth: 0
         borderStyle: none
         borderColor: border-dark
       title:
-        textAlign: left
+        textAlign: center
       text:
-        textAlign: left
+        textAlign: center
 ---
